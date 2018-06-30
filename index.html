@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Set hyperlink on video overlays using video.js | Demo</title>
+  <link href="css/video-js.css" rel="stylesheet">
+  <link href="css/videojs-overlay-hyperlink.css" rel="stylesheet">
+</head>
+<body>
+  <video id="videojs-overlay-player" class="video-js vjs-default-skin" controls>
+    <source src="video/oceans.mp4" type='video/mp4'>
+  </video>
+  <script src="js/video.js"></script>
+  <script src="js/videojs-overlay-hyperlink.js"></script>
+  <script type='text/javascript'>
+    var yourLink = "https://www.google.com/search?q=documentaries+on+oceans";
+  </script>
+  <script>
+    (function(window, videojs) {
+      var player = window.player = videojs('videojs-overlay-player');
+      player.overlay({
+        content: '<a href=# onclick="location.href=yourLink;return false;">Checkout More Documentaries on Oceans</a>',
+        debug: true,
+        overlays: [{
+          start: 0,
+          end: 15,
+          align: 'bottom-left'
+        }, {
+          start: 15,
+          end: 30,
+          align: 'bottom'
+        }, {
+          start: 30,
+          end: 45,
+          align: 'bottom-right'
+        }]
+      });
+    }(window, window.videojs));
+  </script>
+</body>
+</html>

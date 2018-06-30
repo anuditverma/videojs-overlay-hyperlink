@@ -1,0 +1,28 @@
+{
+  "name": "videojs-overlay-hyperlink",
+  "version": "1.0.0",
+  "description": "A simple video.js plugin to display hyperlinks using overlays.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuditverma/videojs-overlay-hyperlink.git"
+  },
+  "keywords": [
+    "videojs",
+    "videojs-plugin",
+    "videojs-hyperlink"
+  ],
+  "author": "Anudit Verma",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/anuditverma/videojs-overlay-hyperlink/issues"
+  },
+  "homepage": "https://github.com/anuditverma/videojs-overlay-hyperlink#readme",
+  "dependencies": {
+    "global": "^4.3.2",
+    "video.js": "^7.0.3"
+  }
+}
