@@ -1,6 +1,6 @@
 {
   "name": "videojs-overlay-hyperlink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple video.js plugin to display hyperlinks using overlays.",
   "main": "index.html",
   "scripts": {
