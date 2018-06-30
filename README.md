@@ -12,7 +12,7 @@ This plugin is built upon popular video.js plugin called [videojs-overlay](https
 ### Live Demo: [Link](https://rawgit.com/anuditverma/videojs-overlay-hyperlink/master/index.html)
 
 ## Download
-Click [here](https://github.com/anuditverma/videojs-overlay-hyperlink/releases/tag/v1.0.0) to download __videojs-overlay-hyperlink__ or `git clone` it into your production directory.
+Click [here](https://github.com/anuditverma/videojs-overlay-hyperlink/releases) to download __videojs-overlay-hyperlink__ or `git clone` it into your production directory.
 
 ```ssh
 git clone https://github.com/anuditverma/videojs-overlay-hyperlink.git
