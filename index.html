@@ -3,18 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>Set hyperlink on video overlays using video.js | Demo</title>
+  <!-- CSS for video.js and other handles styling and positioning of the overlays. -->
   <link href="css/video-js.css" rel="stylesheet">
   <link href="css/videojs-overlay-hyperlink.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Here you can choose to customize the video player's skin and provide the source for your video playback. -->
   <video id="videojs-overlay-player" class="video-js vjs-default-skin" controls>
     <source src="video/oceans.mp4" type='video/mp4'>
   </video>
+
+  <!-- video.js for achieveing core functionality and other js file to handle overlay behaviour -->
   <script src="js/video.js"></script>
   <script src="js/videojs-overlay-hyperlink.js"></script>
+
+  <!-- TARGET hyperlink -->
   <script type='text/javascript'>
     var yourLink = "https://www.google.com/search?q=documentaries+on+oceans";
   </script>
+
+  <!-- js for serving the title and positioning of the hyperlink, you can also leverage 'align' option to set it the desired position, see the style sheets for more options -->
   <script>
     (function(window, videojs) {
       var player = window.player = videojs('videojs-overlay-player');
